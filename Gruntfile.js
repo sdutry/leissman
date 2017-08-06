@@ -21,12 +21,6 @@ module.exports = function(grunt) {
       build: {
         src: ['dist']
       }
-    },
-    'http-server': {
-      dev: {
-        root: 'dist',
-	port: process.env.PORT || 8080
-      }
     }
   });
 
@@ -36,5 +30,4 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-http-server');
 
   grunt.registerTask('default', ['clean', 'jshint', 'copy']);
-  grunt.registerTask('server', ['http-server']);
 };
