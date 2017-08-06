@@ -35,5 +35,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-http-server');
 
-  grunt.registerTask('default', ['clean', 'jshint', 'copy', 'http-server']);
+  grunt.registerTask('default', ['clean', 'jshint', 'copy']);
+  grunt.registerTask('server', ['http-server']);
 };
