@@ -7,7 +7,7 @@
   "author": "Stefaan Dutry <stefaan.dutry@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "postinstall": "grunt"
+    "postinstall": "grunt",
     "start": "grunt server"
   },
   "dependencies": {
