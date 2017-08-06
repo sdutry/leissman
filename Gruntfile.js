@@ -6,6 +6,34 @@ module.exports = function(grunt) {
       files: ['Gruntfile.js']
     },
     copy: {
+      vendor: {
+        files: [
+          {
+            expand: true,
+            cwd: 'node_modules/jquery/dist/',
+            src: ['jquery.min.js'],
+            dest: 'dist/js/vendor'
+          },
+          {
+            expand: true,
+            cwd: 'node_modules/bootstrap/dist/js/',
+            src: ['bootstrap.min.js'],
+            dest: 'dist/js/vendor'
+          },
+          {
+            expand: true,
+            cwd: 'node_modules/image-map-resizer/js/',
+            src: ['imageMapResizer.min.js'],
+            dest: 'dist/js/vendor'
+          },
+          {
+            expand: true,
+            cwd: 'node_modules/bootstrap/dist/css/',
+            src: ['bootstrap.min.css', 'bootstrap-theme.min.css'],
+            dest: 'dist/css/vendor'
+          }
+	]
+      },
       main: {
         files: [
           {
@@ -27,7 +55,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-http-server');
 
-  grunt.registerTask('default', ['clean', 'jshint', 'copy']);
+  grunt.registerTask('default', ['clean', 'jshint', 'copy:vendor', 'copy:main']);
 };

@@ -11,11 +11,14 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "express": "^4.15.3",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-jshint": "^1.1.0"
+    "grunt-contrib-jshint": "^1.1.0",
+    "image-map-resizer": "^1.0.3",
+    "jquery": "^3.2.1"
   }
 }
