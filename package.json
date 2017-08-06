@@ -1,0 +1,17 @@
+{
+  "name": "leissmann",
+  "version": "1.0.0",
+  "description": "website for Jele77",
+  "main": "index.js",
+  "repository": "https://github.com/sdutry/leissman.git",
+  "author": "Stefaan Dutry <stefaan.dutry@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0"
+  }
+}
