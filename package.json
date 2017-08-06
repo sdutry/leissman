@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "grunt"
+    "start": "grunt server"
   },
   "dependencies": {
     "grunt": "^1.0.1",
