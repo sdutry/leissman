@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     'http-server': {
       dev: {
         root: 'dist',
-	port: 8080
+	port: process.env.PORT || 8080
       }
     }
   });
