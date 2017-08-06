@@ -21,12 +21,19 @@ module.exports = function(grunt) {
       build: {
         src: ['dist']
       }
+    },
+    'http-server': {
+      dev: {
+        root: 'dist',
+	port: 8080
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-http-server');
 
-  grunt.registerTask('default', ['clean', 'jshint', 'copy']);
+  grunt.registerTask('default', ['clean', 'jshint', 'copy', 'http-server']);
 };
