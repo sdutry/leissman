@@ -19,12 +19,6 @@ module.exports = function(grunt) {
             src: ['images/**/*'],
             dest: 'dist/assets'
           },
-          {
-	    cwd: 'src',
-	    expand: true,
-	    src: ['**/*', '!images', '!images/**/*'],
-            dest: 'dist'
-          }
         ]
       }
     },
@@ -50,6 +44,17 @@ module.exports = function(grunt) {
         src: 'dist/assets/css/main.css',
         dest: 'dist/assets/css/main.min.css'
       }
+    },
+    assemble: {
+      options: {
+        flatten: true,
+        partials: [],
+        layoutdir: 'src/layouts',
+        layout: 'default.hbs'
+      },
+      site: {
+        files: {'dist/': ['src/pages/*.hbs']}
+      }
     }
   });
 
@@ -59,6 +64,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-assemble');
 
-  grunt.registerTask('default', ['clean', 'jshint', 'concat', 'uglify', 'cssmin', 'copy:todist']);
+  grunt.registerTask('default', ['clean', 'jshint', 'concat', 'uglify', 'cssmin', 'copy:todist', 'assemble']);
 };
