@@ -54,6 +54,7 @@ module.exports = function(grunt) {
       options: {
         flatten: true,
         partials: [],
+        data: 'src/data/*.json',
         layoutdir: 'src/layouts',
         layout: 'default.hbs'
       },
