@@ -6,13 +6,64 @@ banner: /assets/images/stardew/banner.png
 <div class="row">
   {{#each stardew.farms}}
     <div class="col-md-6">
-      <div class="panel panel-primary text-center">
+      <div class="panel panel-primary text-center clearfix">
         <div class="panel-heading"><h4>{{./name}}</h4></div>
         <div class="panel-body">
-          <img src="{{./image}}" class="center-block img-responsive">
+          <img src="{{./image}}" class="center-block img-responsive overlay">
         </div>
         <div class="panel-footer">{{./description}}</div>
       </div>
     </div>
   {{/each}}
 </div>
+<div class="row">
+  <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">              
+        <div class="modal-body">
+      	  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <img src="" id="modalOverlayImage" class="img-responsive">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  (function($){
+    var props = ['Width', 'Height'];
+    var prop;
+  
+    while (prop = props.pop()) {
+      (function (natural, prop) {
+        $.fn[natural] = (natural in new Image()) ? 
+        function () {
+          return this[0][natural];
+        } : 
+        function () {
+          var node = this[0];
+          var img;
+          var value;
+  
+          if (node.tagName.toLowerCase() === 'img') {
+            img = new Image();
+            img.src = node.src,
+            value = img[prop];
+          }
+          return value;
+        };
+      }('natural' + prop, prop.toLowerCase()));
+    }
+  }(jQuery));
+
+  jQuery(function() {
+    jQuery('img.overlay').on('click', function() {
+      jQuery('#modalOverlayImage').attr('src', $(this).attr('src'));
+      var fullImageModalWidth = $(this).naturalWidth() + 32;
+      var maxScreenModalWidth = window.innerWidth - 32;
+      var modalWidth = Math.min(fullImageModalWidth, maxScreenModalWidth);
+      jQuery('#imagemodal .modal-dialog').css('width', modalWidth);
+      jQuery('#imagemodal').modal('show');
+    });
+  });
+</script>
+
