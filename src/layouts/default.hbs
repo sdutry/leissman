@@ -34,9 +34,14 @@
       </div>
     </nav>
     <div class="container">
+      {{#if jumbotitle}}
       <div class="jumbotron">
         <h1>{{jumbotitle}}</h1>
       </div>
+      {{/if}}
+      {{#if banner}}
+        <img src="{{banner}}" class="img-responsive">
+      {{/if}}
       {{>body}}
     </div>
   </body>

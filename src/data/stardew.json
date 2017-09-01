@@ -1,0 +1,27 @@
+{
+  "farms": [{
+      "name": "Jele",
+      "image": "/assets/images/stardew/jeleFarm.png",
+      "description": "Jele is my first file and Maru my first love"
+    },
+    {
+      "name": "Jenny",
+      "image": "/assets/images/stardew/jennyFarm.png",
+      "description": "Jenny is the second file, she was quite fast and efficient. She also dated all the singles before she married Sebastian"
+    },
+    {
+      "name": "Chillda",
+      "image": "/assets/images/stardew/chilldaFarm.png",
+      "description": "Chillda was the chilled run. Right now she's overworking herself and building a Megafarm. 1.5k crops are too much to handle"
+    },
+    {
+      "name": "Elise",
+      "image": "/assets/images/stardew/eliseFarm.png",
+      "description": "Elise is a Hearthstone character and i want her farm to be Un'Goro themed. That means i mainly farm Ancient Fruit and Dinos. She also could finish the CC in year one (and she is a man by mistake)"
+    },
+    {
+      "name": "Johnny T.",
+      "image": "/assets/images/stardew/johnnyTFarm.png",
+      "description": "Johnny T. is the evil and funky Joja run, I am really looking forward to being mean to the whole city."
+    }]
+}
