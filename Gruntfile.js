@@ -53,7 +53,7 @@ module.exports = function(grunt) {
     assemble: {
       options: {
         flatten: true,
-        partials: [],
+        partials: 'src/partials/*.hbs',
         data: 'src/data/*.json',
         layoutdir: 'src/layouts',
         layout: 'default.hbs'
