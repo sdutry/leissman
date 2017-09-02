@@ -11,14 +11,24 @@ module.exports = function(grunt) {
       files: ['Gruntfile.js']
     },
     copy: {
-      todist: {
+      images: {
         files: [
           {
             cwd: 'src',
             expand: true,
             src: ['images/**/*'],
             dest: 'dist/assets'
-          },
+          }
+        ]
+      },
+      fonts: {
+        files: [
+          {
+            cwd: 'node_modules/bootstrap/fonts',
+            expand: true,
+            src: ['*'],
+            dest: 'dist/assets/fonts'
+          }
         ]
       }
     },
@@ -26,17 +36,16 @@ module.exports = function(grunt) {
       css: {
         src: ['node_modules/bootstrap/dist/css/bootstrap.min.css', 
               'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
-	      'src/css/site.css'],
-          dest: 'dist/assets/css/main.css'
-        },
- 
-        js: {
-          src: ['node_modules/jquery/dist/jquery.min.js', 
-                'node_modules/bootstrap/dist/js/bootstrap.min.js',
-                'node_modules/image-map-resizer/js/imageMapResizer.min.js', 
-                'src/js/site.js'],
-          dest: 'dist/assets/js/main.js'
-        }
+              'src/css/site.css'],
+        dest: 'dist/assets/css/main.css'
+      },
+      js: {
+        src: ['node_modules/jquery/dist/jquery.min.js', 
+              'node_modules/bootstrap/dist/js/bootstrap.min.js',
+              'node_modules/image-map-resizer/js/imageMapResizer.min.js', 
+              'src/js/site.js'],
+        dest: 'dist/assets/js/main.js'
+      }
     },
     uglify: {
       js: {
@@ -72,5 +81,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-assemble');
 
-  grunt.registerTask('default', ['clean', 'jshint', 'concat', 'uglify', 'cssmin', 'copy:todist', 'assemble']);
+  grunt.registerTask('default', ['clean', 'jshint', 'concat', 'uglify', 'cssmin', 'copy:images', 'copy:fonts', 'assemble']);
 };
