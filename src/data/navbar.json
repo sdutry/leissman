@@ -1,0 +1,36 @@
+{
+  "brand": {
+    "link": "#",
+    "text": "Jele77"
+  },
+  "links": [
+    {
+      "link": "/",
+      "text": "Home"
+    },
+    {
+      "link": "/about.html",
+      "text": "About"
+    },
+    {
+      "link": "https://www.twitch.tv/jele77",
+      "text": "Twitch"
+    },
+    {
+      "link": "/hearthstone.html",
+      "text": "Hearthstone"
+    },
+    {
+      "link": "/stardew.html",
+      "text": "Stardew"
+    },
+    {
+      "link": "/commissions.html",
+      "text": "Commissions"
+    },
+    {
+      "link": "/contact.html",
+      "text": "Contact"
+    }
+  ]
+}
