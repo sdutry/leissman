@@ -13,7 +13,7 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           {{#each links}}
-            <li><a href="{{link}}">{{text}}</a></li>
+            <li {{#is @root.id activepage}}class="active"{{/is}}><a href="{{link}}">{{text}}</a></li>
           {{/each}}
         </ul>
       </div>

@@ -5,31 +5,38 @@
   "links": [
     {
       "link": "/",
-      "text": "Home"
+      "text": "Home",
+      "activepage": "index"
     },
     {
       "link": "/about.html",
-      "text": "About"
+      "text": "About",
+      "activepage": "about"
     },
     {
       "link": "https://www.twitch.tv/jele77",
-      "text": "Twitch"
+      "text": "Twitch",
+      "activepage": "twitch"
     },
     {
       "link": "/hearthstone.html",
-      "text": "Hearthstone"
+      "text": "Hearthstone",
+      "activepage": "hearthstone"
     },
     {
       "link": "/stardew.html",
-      "text": "Stardew"
+      "text": "Stardew",
+      "activepage": "stardew"
     },
     {
       "link": "/commissions.html",
-      "text": "Commissions"
+      "text": "Commissions",
+      "activepage": "commissions"
     },
     {
       "link": "/contact.html",
-      "text": "Contact"
+      "text": "Contact",
+      "activepage": "contact"
     }
   ]
 }
