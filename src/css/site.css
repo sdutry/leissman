@@ -3,6 +3,7 @@ body {
 }
 
 body#stardew div#maincontent,
+body#about div#maincontent,
 body#hearthstone div#maincontent {
   font-size: 1.5em;
 }
