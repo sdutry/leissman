@@ -28,6 +28,12 @@ module.exports = function(grunt) {
             expand: true,
             src: ['*'],
             dest: 'dist/assets/fonts'
+          },
+          {
+            cwd: 'node_modules/font-awesome/fonts',
+            expand: true,
+            src: ['*'],
+            dest: 'dist/assets/fonts'
           }
         ]
       }
@@ -36,6 +42,7 @@ module.exports = function(grunt) {
       css: {
         src: ['node_modules/bootstrap/dist/css/bootstrap.min.css', 
               'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
+              'node_modules/font-awesome/css/font-awesome.min.css',
               'src/css/site.css'],
         dest: 'dist/assets/css/main.css'
       },
