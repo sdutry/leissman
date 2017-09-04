@@ -1,0 +1,23 @@
+{
+  "title": "Contact",
+  "links": [
+    {
+      "name": "Twitch",
+      "faIcon": "fa-twitch",
+      "url": "https://www.twitch.tv/jele77",
+      "text": "www.twitch.tv/jele77"
+    },
+    {
+      "name": "Twitter",
+      "faIcon": "fa-twitter",
+      "url": "https://twitter.com/jele77hs",
+      "text": "twitter.com/jele77"
+    },
+    {
+      "name": "Email",
+      "faIcon": "fa-envelope-o",
+      "url": "mailto:malerei@leissmann.com",
+      "text": "malerei@leissmann.com"
+    }
+  ]
+}
