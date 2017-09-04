@@ -1,3 +1,8 @@
 body { 
   padding-top: 70px; 
 }
+
+body#stardew div#maincontent,
+body#hearthstone div#maincontent {
+  font-size: 1.5em;
+}
