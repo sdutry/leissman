@@ -4,20 +4,25 @@
       <div class="panel-heading text-center">
         <h3 class="panel-title">{{title}}</h3>
       </div>
-      <div class="panel-body row">
-        {{#each links}}
-          <div class="col-xs-3 text-right">
-            <p>{{name}}</p>
+      <div class="panel-body">
+        <div class="media">
+          <div class="media-left media-middle">
+            <img class="media-object img-circle" width="64" height="64" src="/assets/images/jele77media.jpg" alt="Jele77">
           </div>
-          <div class="col-xs-1">
-            <i class="fa {{faIcon}}" aria-hidden="true"></i>
+          <div class="media-body">
+            <dl class="dl-horizontal">
+            {{#each links}}
+              <dt>
+                <p>{{name}} <i class="fa {{faIcon}}" aria-hidden="true"></i></p>
+              </dt>
+              <dd>
+                <p><a href="{{url}}">{{text}}</a></p>
+              </dd>
+            {{/each}}
+            </dl>
           </div>
-          <div class="col-xs-8">
-            <p><a href="{{url}}">{{text}}</a></p>
-          </div>
-        {{/each}}
+        </div>
       </div>
     </address>
   </div>
 </div>
-
