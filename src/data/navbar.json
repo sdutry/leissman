@@ -1,14 +1,10 @@
 {
   "brand": {
     "text": "Jele77",
-    "image": "/assets/images/favicon/favicon-32x32.png"
+    "image": "/assets/images/favicon/favicon-32x32.png",
+    "link": "/"
   },
   "links": [
-    {
-      "link": "/",
-      "text": "Home",
-      "activepage": "index"
-    },
     {
       "link": "/about.html",
       "text": "About",
