@@ -16,9 +16,9 @@
       "activepage": "twitch"
     },
     {
-      "link": "/hearthstone.html",
-      "text": "Hearthstone",
-      "activepage": "hearthstone"
+      "link": "/cardgames.html",
+      "text": "Cardgames",
+      "activepage": "cardgames"
     },
     {
       "link": "/stardew.html",
