@@ -41,13 +41,12 @@ module.exports = function(grunt) {
     concat: {
       css: {
         src: ['node_modules/bootstrap/dist/css/bootstrap.min.css', 
-              'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
               'node_modules/font-awesome/css/font-awesome.min.css',
               'src/css/site.css'],
         dest: 'dist/assets/css/main.css'
       },
       js: {
-        src: ['node_modules/jquery/dist/jquery.min.js', 
+        src: ['node_modules/jquery/dist/jquery.slim.min.js', 
               'node_modules/bootstrap/dist/js/bootstrap.min.js',
               'node_modules/image-map-resizer/js/imageMapResizer.min.js', 
               'src/js/site.js'],
